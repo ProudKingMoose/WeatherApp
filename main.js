@@ -44,9 +44,8 @@ function GetTemperature(longitude, latitude){
     })
     .then(result => {
         console.log(result);
-        var temp = result[0].temperature;
+        var temp = result.current_weather.temperature;
         console.log(temp);
-        var tempText = document.getElementById("temperatureText").innerHTML;
-        tempText = "Temperature: " + temp;
+        document.getElementById("temperatureText").innerText = "Current Temperature: " + temp + "°C";
     })
 }
