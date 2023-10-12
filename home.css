@@ -44,4 +44,50 @@ nav.navigation ul li a{
 
 h1{
     margin: 0;
+    font-size: 120px;
+}
+h2{
+    margin: 0;
+    font-size: 30px;
+}
+p{
+    margin: 0;
+}
+
+div.body{
+    background-color: lightcoral;
+    width: 100%;
+    height: 1000px;
+}
+
+div.welcomeContainer{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.welcomeDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    background-color: aqua;
+}
+div.mainText{
+    text-align: center;
+}
+div.currentWeatherContainer{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    padding-top: 30px;
+    height: 2000px;
+    width: 100%;
+}
+div.currentWeatherDiv{
+    width: 80%;
+    height: 600px;
+    background-color:brown;
 }
