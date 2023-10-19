@@ -50,7 +50,7 @@ if ("geolocation" in navigator) {
     console.log(longitude);
     console.log(latitude);
 
-    fetch("https://api.open-meteo.com/v1/forecast?latitude=" + latitude + "&longitude=" + longitude + "&current=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation,weathercode,windspeed_10m,winddirection_10m,windgusts_10m&windspeed_unit=ms&forecast_days=1",{
+    fetch("https://api.open-meteo.com/v1/forecast?latitude=" + latitude + "&longitude=" + longitude + "&current=temperature_2m,relativehumidity_2m,apparent_temperature,is_day,precipitation,rain,showers,snowfall,weathercode,windspeed_10m,winddirection_10m,windgusts_10m&windspeed_unit=ms&forecast_days=1",{
         method:'GET'
     }).then(response => {
         if (!response.ok){
@@ -64,6 +64,8 @@ if ("geolocation" in navigator) {
         var windspeed = result.current.windspeed_10m;
         var windgusts = result.current.windgusts_10m;
         var winddirection = degToCompass(result.current.winddirection_10m);
+        document.getElementById("temp").innerText = temp + "C°"
+        document.getElementById("wSpeed").innerText = windspeed + "m/s    " + winddirection;
         console.log(temp);
         console.log(windspeed);
         console.log(windgusts);

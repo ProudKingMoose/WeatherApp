@@ -54,7 +54,7 @@ a{
     margin: 0;
 }
 p{
-    font-size: 60px;
+    font-size: 30px;
     margin: 0;
 }
 
@@ -112,6 +112,20 @@ div.currentWeatherStats{
 }
 div.currentWeatherStats div.infobox{
     height: 200px;
-    width: 250px;
+    width: 350px;
     background-color: antiquewhite;
+}
+div.infoPact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%
+}
+div.infoVar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
 }
