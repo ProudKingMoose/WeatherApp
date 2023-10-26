@@ -50,6 +50,10 @@ h2{
     margin: 0;
     font-size: 30px;
 }
+h3{
+    margin:0;
+    font-size: 20px;
+}
 a{
     margin: 0;
 }
@@ -87,17 +91,17 @@ div.currentWeatherContainer{
     justify-content: center;
     background-color: aquamarine;
     padding-top: 30px;
-    height: 2000px;
+    height: 200px;
     width: 100%;
 }
 div.currentWeatherDiv{
     width: 80%;
-    height: 600px;
+    height: 150px;
     background-color:brown;
 }
 div.currentWeatherTemp{
     background-color:blueviolet;
-    width: 100%;
+    width: auto;
     height: 30%;
 }
 div.currentWeatherStats{
@@ -107,12 +111,12 @@ div.currentWeatherStats{
     align-items: center;
     flex-wrap: wrap;
     background-color: chartreuse;
-    width: 100%;
+    width: auto;
     height: 70%;
 }
 div.currentWeatherStats div.infobox{
-    height: 200px;
-    width: 350px;
+    height: 100%;
+    width: auto;
     background-color: antiquewhite;
 }
 div.infoPact{
@@ -128,4 +132,11 @@ div.infoVar{
     align-items: center;
     height: 80%;
     width: 100%;
+}
+div.day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 200px;
 }

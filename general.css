@@ -56,10 +56,11 @@ h2{
 p{
     margin: 0;
 }
-
-
-
 button{
     width: 50px;
     height: 20px;
+}
+div.hourlyContainer{
+    width: 80%;
+    height: auto;
 }
