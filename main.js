@@ -44,10 +44,29 @@ function GetDailyData(longitude, latitude){
     })
     .then(result => {
         console.log(result);
+
+        const allCoin = document.getElementById("dailyContainer");
         for(var i = 0; i < 14; i++){
 
-            for (var i = 0; i < 24; i++){
-                
+            const mDiv = document.createElement("div");
+            mDiv.classList.add("dailyWeatherDiv");
+            const CoinDiv = document.createElement("div");
+            CoinDiv.classList.add("dailyWeatherStats");
+
+            mDiv.appendChild(CoinDiv);
+            allCoin.appendChild(mDiv);
+
+            for(var i = 0; i < 5; i++)
+            {
+                const IBox = document.createElement("div")
+                IBox.classList.add("infobox");
+                const varDiv = document.createElement("div");
+                varDiv.classList.add("infoVar");
+                const pactDiv = document.createElement("div");
+                pactDiv.classList.add("infoPact");
+                IBox.appendChild(pactDiv);
+                IBox.appendChild(varDiv);
+                CoinDiv.appendChild(IBox);
             }
         }
     })

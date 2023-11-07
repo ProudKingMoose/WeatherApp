@@ -117,6 +117,7 @@ div.currentWeatherStats{
 div.currentWeatherStats div.infobox{
     height: 100%;
     width: auto;
+    min-width: 100px;
     background-color: antiquewhite;
 }
 div.infoPact{
@@ -132,11 +133,4 @@ div.infoVar{
     align-items: center;
     height: 80%;
     width: 100%;
-}
-div.day{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    width: 200px;
 }
