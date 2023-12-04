@@ -1,7 +1,6 @@
 const apikey = "qiFh1fKB1pU1kUbw6FtUOg==vq5q2Inug1ReNehS"
 // Check if geolocation is supported by the browser
 if ("geolocation" in navigator) {
-    console.log("HWOHWOWHWOHWO")
     // Prompt user for permission to access their location
     navigator.geolocation.getCurrentPosition(
       // Success callback function
